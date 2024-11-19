@@ -1,0 +1,8 @@
+package com.mypackage;
+
+public class Student {
+
+	private int s_id;
+	private String s_name;
+	private float s_percent;
+}
