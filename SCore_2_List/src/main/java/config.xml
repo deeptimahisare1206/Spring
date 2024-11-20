@@ -6,12 +6,26 @@
 
 
 	<bean class="com.mypackage.Employee" name="emp1">
-	<property name="name" value="Govind" />
-	<list name="skills">
-		<value></value>
-	</list>
-
-
+		<property name="name" value="Govind" />
+		<property name="skills">
+			<list>
+				<value>Java</value>
+				<value>HTML</value>
+			</list>
+		</property>
+		<property name="mobile">
+			<set>
+				<value>9993998324</value>
+				<value>9644611951</value>
+			</set>
+		</property>
+		<property name="projects">
+			<map>
+				<entry key="pj01" value="Chat app" />
+				<entry key="pj02" value="e book store" />
+				<entry key="pj03" value="client bridge" />
+			</map>
+		</property>
 	</bean>
 
 </beans>

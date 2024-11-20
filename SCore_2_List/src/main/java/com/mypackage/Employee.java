@@ -7,7 +7,7 @@ public class Employee {
 	
 	String name;
 	List<String> skills;
-	Set<Integer> mobile;
+	Set<String> mobile;
 	Map<String, String> projects;
 	
 	
@@ -23,17 +23,18 @@ public class Employee {
 	public void setSkills(List<String> skills) {
 		this.skills = skills;
 	}
-	public Set<Integer> getMobile() {
-		return mobile;
-	}
-	public void setMobile(Set<Integer> mobile) {
-		this.mobile = mobile;
-	}
+	
 	public Map<String, String> getProjects() {
 		return projects;
 	}
 	public void setProjects(Map<String, String> projects) {
 		this.projects = projects;
+	}
+	public Set<String> getMobile() {
+		return mobile;
+	}
+	public void setMobile(Set<String> mobile) {
+		this.mobile = mobile;
 	}
 	
 	
