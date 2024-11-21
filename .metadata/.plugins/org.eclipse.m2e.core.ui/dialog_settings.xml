@@ -6,6 +6,9 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="E:\8. Spring\SCore_e10_autoWire_annotation"/>
+			<item value="E:\8. Spring\SCore_8_init_destroy_annotation"/>
+			<item value="E:\8. Spring\SCore_7_init_destroy_annotation"/>
 			<item value="E:\8. Spring\SCore_2_List\src\main\java\com\mypackage\App.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -33,6 +36,13 @@
 			<item value="com.mypackage"/>
 		</list>
 		<list key="groupId">
+			<item value="SCore_e11_util_set"/>
+			<item value="SCore_e10_autoWire_annotation"/>
+			<item value="SCor_e_10_autoWire_annotation"/>
+			<item value="SCore_9_autoWire"/>
+			<item value="SCore_8_init_destroy_annotation"/>
+			<item value="SCore_7_init_destroy_annotation"/>
+			<item value="SCore_6_init_destroy"/>
 			<item value="SCore_5_Constructor_tag"/>
 			<item value="SCore_4_Constructor_namespace"/>
 			<item value="SCore_3_Reference"/>
@@ -40,6 +50,13 @@
 			<item value="SCore_1"/>
 		</list>
 		<list key="artifactId">
+			<item value="SCore_e11_util_set"/>
+			<item value="SCore_e10_autoWire_annotation"/>
+			<item value="SCor_e_10_autoWire_annotation"/>
+			<item value="SCore_9_autoWire"/>
+			<item value="SCore_8_init_destroy_annotation"/>
+			<item value="SCore_7_init_destroy_annotation"/>
+			<item value="SCore_6_init_destroy"/>
 			<item value="SCore_5_Constructor_tag"/>
 			<item value="SCore_4_Constructor_namespace"/>
 			<item value="SCore_3_Reference"/>
