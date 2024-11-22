@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
 
 
-	<util:set set-class="java.util.linkedhashset" id="my_bff">
+	<util:set set-class="java.util.LinkedHashSet" id="myBff">
 
 		<value>Yogesh</value>
 		<value>NayanShree</value>
@@ -16,9 +16,15 @@
 		<value>Ankit</value>
 	</util:set>
 
-	<bean class="com.mypackage.Person" name="my_friend">
+	<bean class="com.mypackage.Person" name="myFriend">
 		<property name="friends">
-			<ref bean="my_bff" />
+			<ref bean="myBff" />
 		</property>
 	</bean>
+	
+	
+
+	
+	
+	
 </beans>

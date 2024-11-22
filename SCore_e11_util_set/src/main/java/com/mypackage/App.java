@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
     	ApplicationContext ac= new ClassPathXmlApplicationContext("config.xml");
-    	Person p = (Person)ac.getBean("my_friend");
-        System.out.println( "Friends:- "+ p.getFriends());
+    	Person p = (Person)ac.getBean("myFriend");
+        System.out.println( "Friends:- \n"+ p.getFriends());
     }
 }
