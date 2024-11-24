@@ -37,13 +37,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.mypackage"/>
 			<item value="com.myoperations"/>
 			<item value="com.mycompany"/>
-			<item value="com.mypackage"/>
 			<item value="com.basepackage"/>
 			<item value="com.myannotation"/>
 		</list>
 		<list key="groupId">
+			<item value="SCore_e19_Hibernate_Template"/>
 			<item value="SCore_e18_CRUD"/>
 			<item value="SCore_e16_javaConfigClass"/>
 			<item value="SCore_e17_JDBC_Template"/>
@@ -58,9 +59,9 @@
 			<item value="SCore_8_init_destroy_annotation"/>
 			<item value="SCore_7_init_destroy_annotation"/>
 			<item value="SCore_6_init_destroy"/>
-			<item value="SCore_5_Constructor_tag"/>
 		</list>
 		<list key="artifactId">
+			<item value="SCore_e19_Hibernate_Template"/>
 			<item value="SCore_e18_CRUD"/>
 			<item value="SCore_e16_javaConfigClass"/>
 			<item value="SCore_e17_JDBC_Template"/>
@@ -75,7 +76,6 @@
 			<item value="SCore_8_init_destroy_annotation"/>
 			<item value="SCore_7_init_destroy_annotation"/>
 			<item value="SCore_6_init_destroy"/>
-			<item value="SCore_5_Constructor_tag"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

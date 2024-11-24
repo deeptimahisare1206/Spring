@@ -1,8 +1,12 @@
 package com.myoperations;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 /**
  * Hello world!
@@ -39,10 +43,22 @@ public class App
 //      =========================================================================================
         
         //Select one Entry
-        String query = "select * from Student where sid =?";
-        Student i = jt.queryForObject(query, new RowMapperImpl(),2);
-
-      System.out.println("Roll no.: "+i.getRoll()+"\nName: "+i.getName()+"\nPercentage: "+i.getPercent());
+//        String query = "select * from Student where sid =?";
+//        Student i = jt.queryForObject(query, new RowMapperImpl(),2);
+//
+//      System.out.println("Roll no.: "+i.getRoll()+"\nName: "+i.getName()+"\nPercentage: "+i.getPercent());
 //      =========================================================================================
+      
+      //Select all entry.
+      
+        String query = "select * from Student";
+        List<Student> li = jt.query(query, new RowMapperImpl());
+        Iterator<Student> ite = li.iterator();
+        
+        while (ite.hasNext()) {
+			Student s = (Student) ite.next(); 
+			System.out.println(""+s.getRoll()+" : "+s.getName()+" : "+s.getPercent());		     
+		}
+
     }
 }
