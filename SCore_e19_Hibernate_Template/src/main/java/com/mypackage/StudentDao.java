@@ -1,9 +1,11 @@
 package com.mypackage;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 
-import jakarta.transaction.Transactional;
+import javax.transaction.Transactional;
 
 @Transactional
 public class StudentDao {
@@ -19,7 +21,10 @@ public class StudentDao {
 		this.ht = ht;
 	}
 	
-	public void insert(Student st) {
-		Student i = (Student)ht.save(st);
+public int insert(Student st) {
+		int i = (Integer)ht.save(st);
+		
+		// ht.delete(st);
+		return i;
 	}
 }

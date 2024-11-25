@@ -12,14 +12,28 @@ public class App
     public static void main( String[] args )
     {
        
-    	Student st = new Student();
-    	st.setId(101);
-    	st.setName("Ghostu");
-    	st.setPercent(90);
-    	
-    	ApplicationContext ac = new ClassPathXmlApplicationContext("config.xml");
-    	StudentDao sd = (StudentDao)ac.getBean("StudentDao");
-    	sd.insert(st);
-    	
+			
+    		ApplicationContext ac = new ClassPathXmlApplicationContext("config.xml");
+    		Student st = new Student();
+    		st.setId(1011);
+    		st.setName("Ghostu");
+    		st.setPercent(90);
+    		
+    		StudentDao sd = ac.getBean("stuDao",StudentDao.class);
+    		int i=sd.insert(st);
+    		
+    		System.out.println("Value="+i);
+		
+    		/*
+    		st.setId(101);
+    		
+    		
+    		StudentDao sd = ac.getBean("stuDao",StudentDao.class);
+    		sd.delete(st);
+    		
+    		System.out.println("Value=");
+		 * 
+    		 */
+
     }
 }

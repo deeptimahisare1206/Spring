@@ -26,8 +26,7 @@
 	<bean
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
 		name="lsfactory">
-		<property name="dataSource">
-			<ref bean="drivermanagerDS" />
+		<property name="dataSource" ref="drivermanagerDS">
 		</property>
 		<property name="annotatedClasses">
 			<list>
@@ -36,9 +35,9 @@
 		</property>
 		<property name="hibernateProperties">
 			<props>
-				<prop key="dialect">org.hibernate.dialect.MySQL8Dialect</prop>
-				<prop key="show_sql">true</prop>
-				<prop key="hbm2ddl.auto">update</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
 	</bean>
@@ -47,18 +46,18 @@
 		name="htemp">
 		<property name="sessionFactory" ref="lsfactory"/>
 	</bean>
-
+<bean class="com.mypackage.StudentDao" name="stuDao">
+		<property name="ht" ref="htemp">
+		</property>
+	</bean>
 	<bean
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager"
-		name="hibTransactionM">
+		name="transactionManager">
 		<property name="SessionFactory">
 			<ref bean="lsfactory" />
 		</property>
 	</bean>
 
-	<bean class="com.mypackage.StudentDao" name="StudentDao">
-		<property name="ht" ref="htemp">
-		</property>
-	</bean>
+	
 
 </beans>
