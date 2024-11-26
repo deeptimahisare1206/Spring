@@ -41,6 +41,7 @@ public class App {
 		//Update
 		Student st = new Student();
 		st.setName("Smarty");
+		st.setPercent(44);
 		StudentDao sd = ac.getBean("stuDao", StudentDao.class);
 		sd.update(st);
 		System.out.println("Update Successfull!!");

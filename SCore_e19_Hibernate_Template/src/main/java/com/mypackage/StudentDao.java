@@ -33,8 +33,7 @@ public class StudentDao {
 	}
 	
 	public void update(Student st) {
-		Student s =ht.get(Student.class,1);
-		ht.update(s);
+		ht.update(st);
 	}
 	
 	public Student selectOne(Student st) {
